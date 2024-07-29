@@ -1,0 +1,34 @@
+id: cookie-injection-erickfernandox
+
+info:
+  name: Parameter based cookie injection
+  author: pdteam
+  severity: info
+  reference:
+    - https://www.invicti.com/blog/web-security/understanding-cookie-poisoning-attacks/
+    - https://docs.imperva.com/bundle/on-premises-knowledgebase-reference-guide/page/cookie_injection.htm
+  metadata:
+    max-request: 1
+  tags: reflected,dast,cookie,injection
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/?affiliateid=cookie_injection&mediaId=cookie_injection&skinPath=cookie_injection&eos=cookie_injection&promochild=cookie_injection&utm_term=cookie_injection&tpl=cookie_injection&project_id=cookie_injection&suggest=cookie_injection&origem=cookie_injection&proximo=cookie_injection&referral_source=cookie_injection&tag-id=cookie_injection&imagem=cookie_injection"
+      - "{{BaseURL}}/?compare=cookie_injection&demo=cookie_injection&mod=cookie_injection&free=cookie_injection&abo_type=cookie_injection&otag=cookie_injection&privacy=cookie_injection&pageId=cookie_injection&incident_id=cookie_injection&SuccessUrl=cookie_injection&ad_group_id=cookie_injection&accountNumber=cookie_injection&policyNumber=cookie_injection&agentId=cookie_injection&traittype=cookie_injection"
+      - "{{BaseURL}}/?redirectTo=cookie_injection&shortlink=cookie_injection&start_page=cookie_injection&filter-subtype=cookie_injection&attr=cookie_injection&bucket=cookie_injection&ship_to=cookie_injection&activity=cookie_injection&trade=cookie_injection&swap=cookie_injection&markets=cookie_injection&copytrading=cookie_injection&recharge=cookie_injection&red=cookie_injection&expired=cookie_injection"
+      - "{{BaseURL}}/?chkout=cookie_injection&proto=cookie_injection&credential=cookie_injection&credencial=cookie_injection&scoped=cookie_injection&utm_creative=cookie_injection&search_terms=cookie_injection&hunt=cookie_injection&organization=cookie_injection&back=cookie_injection&notify=cookie_injection&successRedirect=cookie_injection&itm_data=cookie_injection&webinar=cookie_injection"
+      - "{{BaseURL}}/?campID=cookie_injection&agencyId=cookie_injection&registration=cookie_injection&SessionKey=cookie_injection&seed=cookie_injection&source_page=cookie_injection&loc=987&imageId=cookie_injection&jobid=cookie_injection&policyholder=cookie_injection&preview_id=cookie_injection&dataURL=cookie_injection&env=cookie_injection&nobounce=cookie_injection&serv=cookie_injection&auth_uri=cookie_injection"
+      - "{{BaseURL}}/?EndCategory=cookie_injection&_requestid=cookie_injection&tab_name=cookie_injection&custom-css=cookie_injection&x-campaign=cookie_injection&partNumber=cookie_injection&referral=cookie_injection&coupon=cookie_injection&ref_type=cookie_injection&%3c/script%3e%3cteste%3e1005&destinationAddress=cookie_injection&traffic_src=cookie_injection&sap-client=cookie_injection&appwebview=cookie_injection"
+      - "{{BaseURL}}/?ticketReference=cookie_injection&ByPath=cookie_injection&lang_redirect=cookie_injection&schedule=cookie_injection&screen=cookie_injection&exchange=cookie_injection&asset_type=cookie_injection&sc_channel=cookie_injection&ssoType=cookie_injection&colorName=cookie_injection&details=cookie_injection&_encoding=cookie_injection&encoding=cookie_injection&expand=cookie_injection"
+      - "{{BaseURL}}/?question=cookie_injection&continue_to=cookie_injection&diff=cookie_injection&forgot=cookie_injection&purpose=cookie_injection&safe_search=cookie_injection&languageid=cookie_injection&offering_id=cookie_injection&sysparm_query=cookie_injection&suffix=cookie_injection&organization_slug=cookie_injection&merchant=cookie_injection&viewkey=cookie_injection&pkey=cookie_injection"
+      - "{{BaseURL}}/?agreed=cookie_injection&EntityID=cookie_injection&viewportId=cookie_injection&resource_tag=cookie_injection&propertyCode=cookie_injection&ptype=cookie_injection&modecode=cookie_injection&evidence=cookie_injection&contact-person=cookie_injection&bundle_key=cookie_injection&new_app=cookie_injection&originUrl=cookie_injection&ViewName=cookie_injection&spaceID=cookie_injection"      
+      - "{{BaseURL}}/?AuthState=cookie_injection&subjectCategory=cookie_injection&score=cookie_injection&achievement=cookie_injection&tenantId=cookie_injection&change_lang=cookie_injection&agencyNumber=cookie_injection&node=cookie_injection&referral_path=cookie_injection&files=cookie_injection&mailTo=cookie_injection&nick=cookie_injection&sitename=cookie_injection&mediaItemId=cookie_injection"
+      - "{{BaseURL}}/?gatewayID=cookie_injection&filterAttributes=cookie_injection&navPage=cookie_injection&nextUrl=cookie_injection&tagFilters=cookie_injection&communityId=cookie_injection&remote=cookie_injection&securityId=cookie_injection&UserToken=cookie_injection&sysparam=cookie_injection&topic=cookie_injection&pgid=cookie_injection&subtype=cookie_injection&referrer_id=cookie_injection&workspace=cookie_injection"
+
+    matchers-condition: and
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - '(?m)(?i)(^set-cookie.*cookie_injection.*)'

@@ -1,0 +1,38 @@
+id: cookie-injection-erickfernandox
+
+info:
+  name: Parameter based cookie injection
+  author: pdteam
+  severity: info
+  reference:
+    - https://www.invicti.com/blog/web-security/understanding-cookie-poisoning-attacks/
+    - https://docs.imperva.com/bundle/on-premises-knowledgebase-reference-guide/page/cookie_injection.htm
+  metadata:
+    max-request: 1
+  tags: reflected,dast,cookie,injection
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/?play=cookie_injection&brand_id=cookie_injection&edition=cookie_injection&edicao=cookie_injection&fname=cookie_injection&xhr=cookie_injection&sort_by=cookie_injection&agree=cookie_injection&confirm=cookie_injection&character=cookie_injection&apiType=cookie_injection&locale_id=cookie_injection&groupID=cookie_injection&group_id=cookie_injection&tag_id=cookie_injection"
+      - "{{BaseURL}}/?dnfile=cookie_injection&VideoFile=cookie_injection&memb=cookie_injection&sMode=cookie_injection&hsLang=cookie_injection&Controller=cookie_injection&Model=cookie_injection&View=cookie_injection&updateDt=cookie_injection&dest_url=cookie_injection&origin_url=cookie_injection&ext_url=cookie_injection&tab_id=cookie_injection&user_info=cookie_injection&ref_id=cookie_injection"     
+      - "{{BaseURL}}/?hosting=cookie_injection&verification=cookie_injection&selected_app=cookie_injection&edit=cookie_injection&iDitem=cookie_injection&senderName=cookie_injection&senderEmail=cookie_injection&formLocation=cookie_injection&jobTitle=cookie_injection&emailStatus=cookie_injection&requestType=cookie_injection&emailid=cookie_injection&formType=cookie_injection&emailAddress=cookie_injection"
+      - "{{BaseURL}}/?plataform=cookie_injection&club=cookie_injection&shop=cookie_injection&buy=cookie_injection&deal=cookie_injection&cookieDomain=cookie_injection&cookie_lifetime=cookie_injection&lifetime=cookie_injection&timeout=cookie_injection&utm_source_url=cookie_injection&side_bar=cookie_injection&head=cookie_injection&copyright=cookie_injection&services=cookie_injection&bounce=cookie_injection&form_id=cookie_injection"
+      - "{{BaseURL}}/?a=cookie_injection&b=cookie_injection&c=cookie_injection&d=cookie_injection&e=cookie_injection&f=cookie_injection&g=cookie_injection&h=cookie_injection&i=cookie_injection&j=cookie_injection&k=cookie_injection&l=cookie_injection&m=cookie_injection&n=cookie_injection&o=cookie_injection&p=cookie_injection&q=cookie_injection&r=cookie_injection&t=cookie_injection&u=cookie_injection&v=cookie_injection&w=cookie_injection&x=cookie_injection&y=cookie_injection&z=cookie_injection"
+      - "{{BaseURL}}/?aa=cookie_injection&bb=cookie_injection&cc=cookie_injection&dd=cookie_injection&ee=cookie_injection&ff=cookie_injection&gg=cookie_injection&hh=cookie_injection&ii=cookie_injection&jj=cookie_injection&kk=cookie_injection&ll=cookie_injection&mm=cookie_injection&nn=cookie_injection&oo=cookie_injection&pp=cookie_injection&qq=cookie_injection&rr=cookie_injection&ss=cookie_injection&tt=cookie_injection&uu=cookie_injection&vv=cookie_injection&ww=cookie_injection&xx=cookie_injection&yy=cookie_injection&zz=cookie_injection"
+      - "{{BaseURL}}/?aaa=cookie_injection&bbb=cookie_injection&ccc=cookie_injection&ddd=cookie_injection&eee=cookie_injection&fff=cookie_injection&ggg=cookie_injection&hhh=cookie_injection&iii=cookie_injection&jjj=cookie_injection&kkk=cookie_injection&lll=cookie_injection&mmm=cookie_injection&nnn=cookie_injection&ooo=cookie_injection&ppp=cookie_injection&qqq=cookie_injection&rrr=cookie_injection&sss=cookie_injection&ttt=cookie_injection&uuu=cookie_injection&vvv=cookie_injection&www=cookie_injection&xxx=cookie_injection&yyy=cookie_injection&zzz=cookie_injection"
+      - "{{BaseURL}}/?container=cookie_injection&number=cookie_injection&word=cookie_injection&page_no=cookie_injection&aid=cookie_injection&bid=cookie_injection&cid=cookie_injection&did=cookie_injection&eid=cookie_injection&fid=cookie_injection&gid=cookie_injection&hid=cookie_injection&iid=cookie_injection&jid=cookie_injection&kid=cookie_injection&lid=cookie_injection&mid=cookie_injection&nid=cookie_injection&oid=cookie_injection&pid=cookie_injection&qid=cookie_injection&rid=cookie_injection&sid=cookie_injection&tid=cookie_injection"
+      - "{{BaseURL}}/?u_id=cookie_injection&vid=cookie_injection&wid=cookie_injection&xid=cookie_injection&yid=cookie_injection&zid=cookie_injection&eventName=cookie_injection&dt=cookie_injection&ed=cookie_injection&id_area=cookie_injection&viewlocale=cookie_injection&idnoticia=cookie_injection&estilo=cookie_injection&tagId=cookie_injection&prd=cookie_injection&paypal=cookie_injection&idioma=cookie_injection&editionId=cookie_injection&gallery=cookie_injection"
+      - "{{BaseURL}}/?up=cookie_injection&regiao=cookie_injection&ordem=cookie_injection&page_code=cookie_injection&docId=cookie_injection&vitrine=cookie_injection&task=cookie_injection&hash_identificacao=cookie_injection&onload=cookie_injection&filme=cookie_injection&servico=cookie_injection&refer=cookie_injection&codNoticia=cookie_injection&hashId=cookie_injection&modo=cookie_injection&sourcepage=cookie_injection&idConteudo=cookie_injection"      
+      - "{{BaseURL}}/?codReuniao=cookie_injection&PlayerID=cookie_injection&pagewanted=cookie_injection&event_time_id=cookie_injection&atual=cookie_injection&filtro=cookie_injection&canonicalUrl=cookie_injection&query_id=cookie_injection&productTypeId=cookie_injection&chooseCity=cookie_injection&Identidade=cookie_injection&init=cookie_injection&gameId=cookie_injection&layer=cookie_injection&pro_id=cookie_injection&render=cookie_injection&error_on_page=cookie_injection"      
+      - "{{BaseURL}}/?turno=cookie_injection&IdNot=cookie_injection&add-to-cart=cookie_injection&attachment_id=cookie_injection&signo=cookie_injection&sensor=cookie_injection&libraries861&library=cookie_injection&perPage=cookie_injection&abrefoto=cookie_injection&codProfile=cookie_injection&linkurl=cookie_injection&lookup=cookie_injection&idtUrl=cookie_injection&variant=cookie_injection&urls=cookie_injection&canal=cookie_injection"
+      - "{{BaseURL}}/?img_index=cookie_injection&incidente=cookie_injection&global=cookie_injection&shade=cookie_injection&time_continue=cookie_injection&area=cookie_injection&ref_src=cookie_injection&remove_item=cookie_injection&redir_esc=cookie_injection&idLayer=cookie_injection&is_registration=cookie_injection&nodeid=cookie_injection&containerId=cookie_injection&paged=cookie_injection&rnd=cookie_injection&serviceCode=cookie_injection"
+      - "{{BaseURL}}/?livro_id=cookie_injection&syndicationid=cookie_injection&mini=cookie_injection&affiliate=cookie_injection&clubcode=cookie_injection&plano=cookie_injection&ind=cookie_injection&done=cookie_injection&pais=cookie_injection&cidade=cookie_injection&estado=cookie_injection&endereco=cookie_injection&cep=cookie_injection&buildTime=cookie_injection&start_date=cookie_injection&skin=cookie_injection&pcode=cookie_injection&num=cookie_injection"
+      - "{{BaseURL}}/?codigo=cookie_injection&flow=cookie_injection&rbulid=cookie_injection&order_type=cookie_injection&anchor=cookie_injection&oferta=cookie_injection&bannerid=cookie_injection&secao=cookie_injection&sellerId=cookie_injection&idArquivo=cookie_injection&resultado=cookie_injection&end_url=cookie_injection&utm_code=cookie_injection&valor=cookie_injection&metodo=cookie_injection&errorMessage=cookie_injection&change_direction=cookie_injection"
+
+    matchers-condition: and
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - '(?m)(?i)(^set-cookie.*cookie_injection.*)'
